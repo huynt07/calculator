@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    align-items: center;
+    background: pink;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+.calculator {
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: black;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 360px;
+    height: 540px;
+    padding: 20px 35px;
+}
+.display {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px black;
+    color: black;
+    font-size: 40px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 330px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+.button {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    cursor: pointer;
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: black;
+    font-family: inherit;
+    font-size: 24px;
+    flex-basis: 20%;
+    height: 65px;
+}
+.operator {
+    background: orange;
+    color: white;
+}
+.button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.button:active {
+    background: yellow;
+}
+.operator:hover {
+    background: darkorange;
+    color: white;
+}
+.operator:active{
+    background: yellow;
+    color: black;
+}
+.wide {
+    flex-basis: 47%;
+}
