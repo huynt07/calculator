@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     height: 100%;
+    touch-action: manipulation; /* tat double-tap zoom tren dien thoai */
 }
 *,
 *::before,
@@ -19,7 +20,7 @@ body {
     justify-content: center;
 }
 .calculator {
-    border-radius: 16px;
+    border-radius: 32px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     color: black;
     backdrop-filter: blur(4px);
@@ -30,18 +31,24 @@ body {
     height: 540px;
     padding: 20px 35px;
 }
-.display {
+.display,
+.button {
+    /* gop chung backdrop-filter vi ca 2 deu dung cung 1 gia tri blur(5.5px) */
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
+}
+.display {
     background: white;
     border-radius: 16px;
     box-shadow: 0 4px 30px black;
     color: black;
     font-size: 40px;
-    overflow: auto;
     padding: 20px;
     text-align: right;
-    width: 330px;
+    width: 312px;
+    white-space: nowrap;   /* khong cho xuong dong */
+    overflow-x: auto;      /* cho cuon ngang, co thanh truot */
+    overflow-y: hidden;    /* an cuon doc */
 }
 .row {
     display: flex;
@@ -49,8 +56,6 @@ body {
     margin: 5% 0;
 }
 .button {
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     cursor: pointer;
     background: white;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -61,6 +66,9 @@ body {
     font-size: 24px;
     flex-basis: 20%;
     height: 65px;
+    touch-action: manipulation; /* tat double-tap zoom tren dien thoai */
+    -webkit-user-select: none;
+    user-select: none; /* tranh bi bau chon van ban khi cham nhanh nhieu lan */
 }
 .operator {
     background: orange;
@@ -75,7 +83,6 @@ body {
 }
 .operator:hover {
     background: darkorange;
-    color: white;
 }
 .operator:active{
     background: yellow;
