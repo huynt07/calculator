@@ -38,7 +38,12 @@ calculator/
 
 ## 🚀 Cách chạy
 
-Mở trực tiếp file `index.html` để chạy ứng dụng.
+1. Tải hoặc clone dự án về máy:
+   ```bash
+   git clone <link-repository>
+   ```
+2. Mở thư mục dự án.
+3. Nhấp đúp hoặc mở file `index.html` bằng trình duyệt để sử dụng ứng dụng.
 
 ## 📸 Demo
 
@@ -57,7 +62,8 @@ Có thể bổ sung thêm các tính năng như:
 
 ## 👨‍💻 Người thực hiện
 
-Được chỉnh sửa và phát triển bởi **Nguyễn Thanh Huy**
+Được chỉnh sửa và phát triển bởi
+*Nguyễn Thanh Huy*
 
 ## 🤝 Liên hệ
 
