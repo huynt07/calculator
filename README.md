@@ -62,11 +62,9 @@ Có thể bổ sung thêm các tính năng như:
 
 ## 👨‍💻 Người thực hiện
 
-Dự án được phát triển dựa trên ý tưởng từ: [ASMR Programming - Calculator App Coding - No Talking](https://www.youtube.com/watch?v=sBJmRD7kNTk&t=2s)
+Dự án được phát triển dựa trên ý tưởng từ video: [ASMR Programming - Calculator App Coding - No Talking](https://www.youtube.com/watch?v=sBJmRD7kNTk&t=2s)
 
-Được chỉnh sửa và phát triển bởi:
-
-*Nguyễn Thanh Huy*
+Được chỉnh sửa và phát triển bởi: *Nguyễn Thanh Huy*
 
 ## 🤝 Liên hệ
 
