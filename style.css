@@ -27,8 +27,10 @@ body {
     -webkit-backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, 0.30);
     border: 1px solid rgba(255, 255, 255, 0.34);
-    flex-basis: 360px;
+    width: 100%;
+    max-width: 360px;
     height: 540px;
+    margin: 0 16px;
     padding: 20px 35px;
 }
 .display,
@@ -45,7 +47,7 @@ body {
     font-size: 40px;
     padding: 20px;
     text-align: right;
-    width: 312px;
+    width: 100%;
     white-space: nowrap;   /* khong cho xuong dong */
     overflow-x: auto;      /* cho cuon ngang, co thanh truot */
     overflow-y: hidden;    /* an cuon doc */
@@ -66,7 +68,6 @@ body {
     font-size: 24px;
     flex-basis: 20%;
     height: 65px;
-    touch-action: manipulation; /* tat double-tap zoom tren dien thoai */
     -webkit-user-select: none;
     user-select: none; /* tranh bi bau chon van ban khi cham nhanh nhieu lan */
 }
